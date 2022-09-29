@@ -6,8 +6,17 @@
     <title>Tela de login</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(blue, purple);
+            font-family: Arial,'Times New Roman' , sans-serif;
+            background-image: linear-gradient();
+        }
+        hr{
+            position: absolute;
+            width: 1534px;
+            height: 90px;
+            left: -461px;
+            top: -10px;
+            background: #292C33;
+
         }
         div{
             background-color: rgba(0, 0, 0, 0.0);
@@ -17,17 +26,20 @@
             transform: translate(0%,0%);
             padding: 183px;
             border-radius: 20px;
-            color: #fff;
+            color: #000;
         }
         input{
             padding: 18px;
+            width: 86%;
             border: none;
             outline: none;
-            border-radius: 15px;
-            font-size: 16px;
+            border-radius: 10px;
+            font-size: 16px;   
+            font-family: 'Sora';
+            line-height: 20px;
         }
         button{
-            background-color: dodgerblue;
+            background-color: rgb(0, 0, 0);
             border: none;
             padding: 18px;
             width: 100%;
@@ -36,34 +48,31 @@
             font-size: 18px;
             
         }
-        button:hover{
-            color: rgb(0, 191, 255);
-            position: absolute;
-        }
-        image{
+        a{
+            font-size: 11px;
+            font-style: normal;  
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             
-            position: absolute;
-            width: 1440px;
-            height: 81px;
-            left: -80px;
-            top: 0px;
-            background: #292C33;
+        }
+        button:hover {
+            background-color: rgba(67, 71, 72, 0.309);
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
     <div>
+        <hr size="5" width="50%" align="center" noshade>
         <h1>Login</h1>
-        <input type="email" placeholder="E-mail">
+        <input type="text" placeholder="Digite seu e-mail" autofocus>
         <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <button>Entrar</button>
-        <br><br>
-        <button:hover>Esqueceu a senha?</button:hover>
-        <br><br>
-        <button:hover>Fazer Cadastro</button:hover>
+        <input type="password" placeholder="Digite sua senha">
+        <br><br>   
+        <a> <a href="#">Esqueceu a senha?</a>
+        <a>Não tem conta? <a href="#">Cadastre-se</a></a></a>
+        <br><br>  
+        <button>Entrar</button>    
     </div>
 </body>
 </html>

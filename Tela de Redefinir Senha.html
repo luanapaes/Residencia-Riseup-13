@@ -9,20 +9,20 @@
             font-family: Arial,'Times New Roman' , sans-serif;
             background-image: linear-gradient(#bcbcbc,#bcbcbc);
         }
-        h1{
-            position: relative;
-            font-size: 30px;
-            text-align: left;
-            line-height: 30px;
-        }
         hr{
             position: absolute;
             width: 1535px;
-            height: 90px;
+            height: 70px;
             left: -462px;
             top: -11px;
             background: #292C33;
 
+        }
+        h1{
+            position: relative;
+            font-size: 23px; 
+            text-align: right;
+            line-height: 28px;
         }
         div{
             background-color: rgba(0, 0, 0, 0);
@@ -36,12 +36,13 @@
         }
         input{
             padding: 18px;
-            width: 125%;
+            width: 120%;
             border: none;
             outline: none;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
             font-size: 16px;   
+            align-items: center; 
             font-family: 'Sora';
             line-height: 20px;
         }
@@ -49,7 +50,7 @@
             background-color: rgb(0, 0, 0);
             border: none;
             padding: 18px;
-            width: 125%;
+            width: 120%;
             border-radius: 15px;
             color: white;
             font-size: 18px;
@@ -59,6 +60,10 @@
             font-family: 'Sora';
             font-style: normal;  
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+        }
+        button:hover {
+            background-color: rgba(67, 71, 72, 0.309);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -72,6 +77,8 @@
         <input type="password" placeholder="Digite sua nova senha">
         <br><br>
         <input type="password" placeholder="Digite novamente a senha"> 
+        <br><br>  
+        <a>Não tem conta? <a href="#">Cadastre-se</a></a></a>
         <br><br>  
         <button>Redefinir senha</button>    
     </div>

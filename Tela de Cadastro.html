@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Cadastre-se</title>
     <style>
         body{
             font-family: Arial,'Times New Roman' , sans-serif;
@@ -11,7 +11,7 @@
         }
         hr{
             position: absolute;
-            width: 1535px;
+            width: 1523px;
             height: 90px;
             left: -462px;
             top: -11px;
@@ -20,13 +20,13 @@
         }
         h1{
             position: relative;
-            font-size: 23px;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20); 
+            font-size: 25px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
             text-align: center;
             line-height: 120%;
-            width: 25px;
+            width: -10px;
             height: 30px;
-            left: 106px;
+            left: 36px;
         }
         div{
             background-color: rgba(0, 0, 0, 0);
@@ -40,7 +40,7 @@
         }
         input{
             padding: 18px;
-            width: 120%;
+            width: 132%;
             border: none;
             outline: none;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -54,13 +54,13 @@
             background-color: rgb(0, 0, 0);
             border: none;
             padding: 18px;
-            width: 120%;
+            width: 132%;
             border-radius: 15px;
             color: white;
             font-size: 18px;
         }
         a{
-            font-size: 11px;
+            font-size: 13px;
             font-family: 'Sora';
             font-style: normal;  
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
@@ -75,15 +75,20 @@
 <body>
     <div>
         <hr size="5" width="50%" position="center" noshade>
-        <h1>Login</h1>
-        <input type="text" placeholder="Digite seu e-mail" autofocus>
+        <h1>Criar Conta</h1>
+        <input type="text" placeholder="Nome completo" autofocus>
         <br><br>
-        <input type="password" placeholder="Digite sua senha">
+        <input type="text" placeholder="CPF/CNPJ">
+        <br><br>
+        <input type="text" placeholder="E-mail">
+        <br><br>
+        <input type="text" placeholder="Nome de usuário">
+        <br><br>
+        <input type="password" placeholder="Senha">
         <br><br>   
-        <a><a href="#">Esqueceu a senha? </a>
-        <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Não tem conta? <a href="#">Cadastre-se</a></a></a>
+        <a>Já possui uma conta? <a href="#">Entrar</a></a></a>
         <br><br>  
-        <button>Entrar</button>    
+        <button>Cadastre-se</button>    
     </div>
 </body>
 </html>

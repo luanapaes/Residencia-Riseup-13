@@ -100,6 +100,23 @@
             font-style: normal;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
+        label{
+            align-items: center;
+            padding: 18px;      
+            border: none;
+            outline: none;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            align-items: center;
+            font-size: 16px;
+            font-family: 'Sora';
+            background: white;
+            line-height: 60px; 
+        }
+
+        option{
+            font-size: 14px;
+        }
 
         button:hover {
             background-color: rgba(67, 71, 72, 0.309);
@@ -121,17 +138,18 @@
         <br><br>
         <input type="text" placeholder="Valor Parcelado (12x)">
         <br><br>
-            <label for="categoria">Categoria</label>
-            <select for="categoria" id="categoria>
-                <optionvalue="">Selecione</option>
-                <option selected disabled value="">selecione</option>
-                <option>Eletrodomésticos</option>
-                <option>Acessórios de Tecnologia</option>
-                <option>Ar e Ventilação</option>
-                <option>Cama, Mesa e Banho</option>
-                <option>Celular e Smartphone</option>
-                <option>Móveis</option>
-            </select>
+            <label for="categoria">Categoria
+                <select id="categoria>
+                    <optionvalue="">Selecione</option>
+                    <option selected disabled value="">selecione</option>
+                    <option>Eletrodomésticos</option>
+                    <option>Acessórios de Tecnologia</option>
+                    <option>Ar e Ventilação</option>
+                    <option>Cama, Mesa e Banho</option>
+                    <option>Celular e Smartphone</option>
+                    <option>Móveis</option>
+                </select>
+            </label>
 
         <br><br>
         <input type="password" placeholder="Novo (SIM/NÃO)">

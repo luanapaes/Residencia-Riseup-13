@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>TEditar Produto</title>
     <style>
         body {
             font-family: Arial, 'Times New Roman', sans-serif;
@@ -95,10 +95,44 @@
         }
 
         a {
-            font-size: 11px;
-            font-family: 'Sora';
+            width: 51px;
+            height: 20px;
+            left: 474px;
+            top: 119px;
+
+            font-family: 'Sora';    
             font-style: normal;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+
+            color: #000000;
+            text-decoration: none;
+        }
+
+        label{
+            align-items: center;
+            padding-bottom: -5px;    
+            border: none;
+            outline: none;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            float: left;
+            width: 400px;
+            display: relative;
+            margin-bottom: 20px;    
+            float: left;
+            border-radius: 4px;
+            align-items: center;
+            font-size: 16px;
+            font-family: 'Sora';
+            color: #BCBCBC;
+            background: white;
+            line-height: 58px; 
+        }
+
+        option{
+            font-size: 14px;
         }
 
         button:hover {
@@ -111,9 +145,9 @@
 <body>
     <div>
         <hr size="5" width="100%" position="center" noshade>
-        <h2>Voltar</h2>
-        <h1>Editar Produto</h1>
+        <a href="">⬅ Voltar</a>
         <br><br>
+        <h1>Editar Produto</h1>
         <br><br>
         <input type="text" placeholder="Nome" autofocus>
         <br><br>
@@ -121,11 +155,22 @@
         <br><br>
         <input type="text" placeholder="Valor Parcelado (12x)">
         <br><br>
-        <input type="text" placeholder="Categoria">
+        <label for="categoria">Categoria
+            <select id="categoria>
+                <optionvalue="">Selecione</option>
+                <option id="opcoes" selected disabled value="">selecione</option>
+                <option>Eletrodomésticos</option>
+                <option>Móveis</option>
+                <option>Cama, Mesa e Banho</option>
+                <option>Ar e Ventilação</option>
+                <option>Acessórios de Tecnologia</option>
+                <option>Celular e Smartphone</option>
+            </select>
+        </label>
         <br><br>
         <input type="password" placeholder="Novo (SIM/NÃO)">
         <br><br>
-        <button>Cadastrar</button>
+        <button>Salvar Alterações</button>
     </div>
 </body>
 

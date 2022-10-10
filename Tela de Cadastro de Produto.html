@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,174 +8,233 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-cadastro.css">
     <title>Cadastrar Produto</title>
-    <style>
-        body {
-            font-family: Arial, 'Times New Roman', sans-serif;
-            background-color: #d6d5da86;
-            position: relative;
-            width: 1280px;
-            height: 720px;
-        }
-
-        hr {
-            position: absolute;
-            width: 1525px;
-            height: 90px;
-            left: -400px;
-            top: -20px;
-            background: #292C33;
-        }
-
-        h1 {
-            position: absolute;
-            width: 400px;
-            height: 63px;
-            text-align: left;
-            top: 198px;
-            font-family: 'Sora';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 63px;
-            color: #000000;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-            line-height: 20px;
-        }
-
-        h2 {
-            position: absolute;
-            width: 400px;
-            height: 63px;
-            left: 220px;
-            top: 140px;
-            font-family: 'Sora';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 63px;
-            color: #000000;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-            line-height: 20px;
-        }
-
-        div {
-            background-color: rgba(0, 0, 0, 0);
-            position: absolute;
-            width: 400px;
-            top: 00%;
-            left: 30%;
-            transform: translate(0%, 0%);
-            padding: 183px;
-            border-radius: 20px;
-            color: #000;
-        }
-
-        input {
-            align-items: center;
-            padding: 18px;
-            width: 400px;
-            border: none;
-            outline: none;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 4px;
-            align-items: center;
-            font-size: 16px;
-            font-family: 'Sora';
-            line-height: 20px;
-        }
-
-        button {
-            align-items: center;
-            background-color: rgb(0, 0, 0);
-            border: none;
-            padding: 18px;
-            width: 400px;
-            border-radius: 4px;
-            color: white;
-            font-size: 18px;
-        }
-
-        a {
-            width: 51px;
-            height: 20px;
-            left: 474px;
-            top: 119px;
-
-            font-family: 'Sora';    
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-
-            color: #000000;
-            text-decoration: none;
-        }
-
-        label{
-            align-items: center;
-            padding-bottom: -5px;    
-            border: none;
-            outline: none;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            display: flex;
-            float: left;
-            width: 400px;
-            display: relative;
-            margin-bottom: 20px;    
-            float: left;
-            border-radius: 4px;
-            align-items: center;
-            font-size: 16px;
-            font-family: 'Sora';
-            color: #BCBCBC;
-            background: white;
-            line-height: 58px; 
-        }
-
-        option{
-            font-size: 14px;
-        }
-
-        button:hover {
-            background-color: rgba(67, 71, 72, 0.309);
-            cursor: pointer;
-             
-        }
-    </style>
 </head>
 
+
 <body>
+    <div class="parteDeCima">
+        <hr class="barra" size="5" width="100%" position="center" noshade>
+    </div>
     <div>
-        <hr size="5" width="100%" position="center" noshade>
-        <a href="">⬅ Voltar</a>
-        <h1>Novo Produto</h1>
-        <br><br>
-        <br><br>
+        <a class="voltar" href="">⬅ Voltar</a>
+    </div>
+    <div>
+        <h1 class="novoProduto">Novo Produto</h1>
+    </div>
+
+
+    <div class="principais">
         <input type="text" placeholder="Nome" autofocus>
         <br><br>
         <input type="text" placeholder="Valor Total">
         <br><br>
         <input type="text" placeholder="Valor Parcelado (12x)">
-        <br><br>
-            <label for="categoria">Categoria
-                <select id="categoria>
-                    <optionvalue="">Selecione</option>
-                    <option id="opcoes" selected disabled value="">selecione</option>
-                    <option>Eletrodomésticos</option>
-                    <option>Móveis</option>
-                    <option>Cama, Mesa e Banho</option>
-                    <option>Ar e Ventilação</option>
-                    <option>Acessórios de Tecnologia</option>
-                    <option>Celular e Smartphone</option>
-                </select>
-            </label>
-
-        <br><br>
-        <input type="password" placeholder="Novo (SIM/NÃO)">
-        <br><br>
+    </div>
+    <div class="opcoes">
+            <select id="categoria>
+                <optionvalue="">Selecione</option>
+                <option id=" opcoes" selected disabled value="">Categoria</option>
+                <option>Eletrodomésticos</option>
+                <option>Móveis</option>
+                <option>Cama, Mesa e Banho</option>
+                <option>Ar e Ventilação</option>
+                <option>Acessórios de Tecnologia</option>
+                <option>Celular e Smartphone</option>
+            </select>
+    </div>
+    <div class="simNao">
+        <input type="text" placeholder="Novo (SIM/NÃO)">
+    </div>
+    <div class="cadastrar">
         <button>Cadastrar</button>
     </div>
 </body>
 
 </html>
+                          
+                          
+ body {
+    font-family: Arial, 'Times New Roman', sans-serif;
+    background-color: #d6d5da86;
+    position: relative;
+    width: 1280px;
+    height: 720px;
+}
+
+.barra {
+    position: absolute;
+    width: 1855px;
+    height: 90px;
+    left: -400px;
+    top: -98px;
+    background: #292C33;
+}
+
+a {
+    position: absolute;
+    width: 400px;
+    margin: 0px 637px;
+    text-align: left;
+    left: center;
+    top: 108px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 63px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.novoProduto {
+    position: absolute;
+    width: 400px;
+    text-align: left;
+    margin: 0px 637px;
+    top: 150px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 63px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    line-height: 20px;
+}
+
+.parteDeCima {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    margin: 0px;
+    width: 400px;
+    top: 78px;
+    left: 30%;
+    transform: translate(0%, 0%);
+    padding: 183px;
+    border-radius: 4px;
+    color: #000;
+}
+
+.principais {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    margin: 0px;
+    margin: 0px 68px;
+    width: 400px;
+    top: 32px;
+    left: 30%;
+    transform: translate(0%, 0%);
+    padding: 183px;
+    border-radius: 4px;
+    color: #000;
+}
+
+.opcoes {
+    position: inherit;
+    width: 30%;
+    border-radius: none;
+    margin: 0px 634px;
+    display: block;
+    left: 0px;
+    top: -160px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30.8rem;
+}
+
+.simNao {
+    position: inherit;
+    width: 60%;
+    top: -240px;
+    padding: 18px;
+    margin: 0px 619px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: -30.8rem;
+}
+
+.cadastrar {
+    position: inherit;
+    top: -259px;
+    padding: 18px;
+    align-items: center;
+    display: block;
+    float: right;
+    width: 400px;
+    margin: 10px 543px;
+    right: -320px;
+    cursor: pointer;
+}
+
+select {
+    align-items: center;
+    padding-bottom: -5px;
+    border: none;
+    padding: 16px;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 424px;
+    display: relative;
+    margin-bottom: 10px;
+    float: left;
+    margin: 102px 1px;
+    border-radius: 4px;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Sora';
+    color: #00000192;
+    line-height: 58px;
+}
+
+.novo {
+    display: flex;
+    float: right;
+    top: 40px;
+    margin: -301px 439px;
+    right: -340px;
+}
+
+input {
+    padding: 18px;
+    width: 389px;
+    height: 18px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #BCBCBC;
+
+}
+
+button {
+    padding: 18px;
+    width: 422px;
+    border: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgba(67, 71, 72, 0.309);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}

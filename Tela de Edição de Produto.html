@@ -1,242 +1,181 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="edicao-produto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Produto</title>
+    <title>Tela de login</title>
+    <style>
+        body {
+            font-family: Arial, 'Times New Roman', sans-serif;
+            background-color: #d6d5da86;
+            position: relative;
+            width: 1280px;
+            height: 720px;
+        }
 
+        hr {
+            position: absolute;
+            width: 1525px;
+            height: 90px;
+            left: -400px;
+            top: -20px;
+            background: #292C33;
+        }
+
+        h1 {
+            position: absolute;
+            width: 400px;
+            height: 63px;
+            text-align: left;
+            top: 188px;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 63px;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+            line-height: 20px;
+        }
+
+        h2 {
+            position: absolute;
+            width: 400px;
+            height: 63px;
+            left: 184px;
+            top: 140px;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 63px;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+            line-height: 20px;
+        }
+
+        div {
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 00%;
+            left: 30%;
+            transform: translate(0%, 0%);
+            padding: 183px;
+            border-radius: 20px;
+            color: #000;
+        }
+
+        input {
+            align-items: center;
+            padding: 18px;
+            width: 400px;
+            border: none;
+            outline: none;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            align-items: center;
+            font-size: 16px;
+            font-family: 'Sora';
+            line-height: 20px;
+        }
+
+        button {
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            outline: none;
+            padding: 18px;
+            width: 400px;
+            border-radius: 15px;
+            color: white;
+            font-size: 18px;
+        }
+
+        select {
+            border: none;
+            outline: none;
+            width: 364px;
+        }
+
+        a {
+            position: absolute;
+            width: 400px;
+            text-align: left;
+            left: center;
+            top: 170px;
+            font-family: 'Sora';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 63px;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+            line-height: 20px;
+            text-decoration: none;
+        }
+
+        label {
+            padding: 18px;
+            border: none;
+            outline: none;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Sora';
+            background: white;
+            line-height: 60px;
+        }
+
+        option {
+            font-family: 'Sora';
+            font-style: normal;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            align-items: right;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgba(67, 71, 72, 0.309);
+            cursor: pointer;
+        }
     </style>
 </head>
 
-
 <body>
-    <div class="parteDeCima">
-        <hr class="barra" size="5" width="100%" position="center" noshade>
-    </div>
     <div>
-        <a  href="">⬅ Voltar</a>
-    </div>
-    <div>
-        <h1 class="novoProduto">Editar Produto</h1>
-    </div>
-
-
-    <div class="principais">
+        <hr size="5" width="100%" position="center" noshade>
+        <a href='file:///C:/Users/larys/Documents/VSCODEStudio/Squad/Tela%20Principal.html'>⬅ Voltar</a>
+        <h1>Editar Produto</h1>
+        <br><br>
+        <br><br>
         <input type="text" placeholder="Nome" autofocus>
         <br><br>
         <input type="text" placeholder="Valor Total">
         <br><br>
         <input type="text" placeholder="Valor Parcelado (12x)">
-    </div>
-    <div class="opcoes">
+        <br><br>
+        <label for="categoria">
             <select id="categoria>
-                <optionvalue="">Selecione</option>
-                <option id=" opcoes" selected disabled value="">Categoria</option>
-                <option>Eletrodomésticos</option>
-                <option>Móveis</option>
-                <option>Cama, Mesa e Banho</option>
-                <option>Ar e Ventilação</option>
-                <option>Acessórios de Tecnologia</option>
-                <option>Celular e Smartphone</option>
-            </select>
-    </div>
-    <div class="simNao">
-        <input type="text" placeholder="Novo (SIM/NÃO)">
-    </div>
-    <div class="cadastrar">
-        <button>Salvar Alterações</button>
+                    <optionvalue="">Categoria</option>
+                    <option selected disabled value="">Categoria</option>
+                    <option>Eletrodomésticos</option>
+                    <option>Acessórios de Tecnologia</option>
+                    <option>Ar e Ventilação</option>
+                    <option>Cama, Mesa e Banho</option>
+                    <option>Celular e Smartphone</option>
+                    <option>Móveis</option>
+                </select>
+            </label>
+
+        <br><br>
+        <input type=" password" placeholder="Novo (SIM/NÃO)">
+                <br><br>
+                <button>Salvar Alterações</button>
     </div>
 </body>
 
 </html>
-                          
-                          
-    body {
-    font-family: Arial, 'Times New Roman', sans-serif;
-    background-color: #d6d5da86;
-    position: relative;
-    width: 1280px;
-    height: 720px;
-}
-
-.barra {
-    position: absolute;
-    width: 1855px;
-    height: 90px;
-    left: -400px;
-    top: -98px;
-    background: #292C33;
-}
-
-a {
-    position: absolute;
-    width: 400px;
-    margin: 0px 637px;
-    text-align: left;
-    left: center;
-    top: 108px;
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 63px;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.novoProduto {
-    position: absolute;
-    width: 400px;
-    text-align: left;
-    margin: 0px 637px;
-    top: 150px;
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 63px;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    line-height: 20px;
-}
-
-.parteDeCima {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    margin: 0px;
-    width: 400px;
-    top: 78px;
-    left: 30%;
-    transform: translate(0%, 0%);
-    padding: 183px;
-    border-radius: 4px;
-    color: #000;
-}
-
-.principais {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    margin: 0px;
-    margin: 0px 68px;
-    width: 400px;
-    top: 32px;
-    left: 30%;
-    transform: translate(0%, 0%);
-    padding: 183px;
-    border-radius: 4px;
-    color: #000;
-}
-
-.opcoes {
-    position: inherit;
-    width: 30%;
-    border-radius: none;
-    margin: 0px 634px;
-    display: block;
-    left: 0px;
-    top: -160px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 30.8rem;
-}
-
-.simNao {
-    position: inherit;
-    width: 60%;
-    top: -240px;
-    padding: 18px;
-    margin: 0px 619px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: -30.8rem;
-}
-
-.cadastrar {
-    position: inherit;
-    top: -259px;
-    padding: 18px;
-    align-items: center;
-    display: block;
-    float: right;
-    width: 400px;
-    margin: 10px 543px;
-    right: -320px;
-    cursor: pointer;
-}
-
-select {
-    align-items: center;
-    padding-bottom: -5px;
-    border: none;
-    padding: 15px;
-    width: 422px;
-    outline: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: relative;
-    margin-bottom: 10px;
-    float: left;
-    margin: 102px 1px;
-    border-radius: 4px;
-    align-items: center;
-    font-size: 16px;
-    font-family: 'Sora';
-    color: #00000192;
-    line-height: 58px;
-}
-
-.novo {
-    display: flex;
-    float: right;
-    top: 40px;
-    margin: -301px 439px;
-    right: -340px;
-}
-
-input {
-    padding: 27px;
-    width: 422px;
-    height: 18px;
-    border: none;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
-    border-radius: 4px;
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-    color: #BCBCBC;
-
-}
-
-button {
-    padding: 18px;
-    width: 422px;
-    border: none;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-}
-
-button:hover{
-    background-color: rgba(67, 71, 72, 0.309);
-    cursor: pointer;
-    transform: scale(1.0);
-    transition: all 0.9s;
-}
-

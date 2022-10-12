@@ -11,7 +11,6 @@
     <title>Tela Principal</title>
 
 </head>
-
 <body>
     <div>
         <hr id="barra" size="5" width="100%" position="center" noshade>
@@ -20,9 +19,13 @@
     </div>
     <div class="pesquisa">
         <input type="text" placeholder="Pesquisar Produto">
-        <button class="iconPesquisa" type="submit">&#128269;</button>
+        <button>&#128269</button>
     </div>
-</body>>
+    <div>
+        <button id="iconMais">&#10010</button>
+        <p>Cadastrar Produto</p>
+    </div>
+</body>
 </body>
 
 </html>
@@ -37,7 +40,7 @@ body {
 
 hr {
     position: absolute;
-    width: 1525px;
+    width: 1625px;
     height: 90px;
     left: -400px;
     top: -20px;
@@ -90,10 +93,26 @@ input {
 
 }
 
-.iconPesquisa{
+button {
     padding: 17px;
     border-radius: 30px;
     border: none;
+    outline: none;
     background: #FFFFFF;
-    margin: -123px 395px;
+    margin: -123.9px 397.5px;
+}
+
+button:hover {
+    background-color: rgba(67, 71, 72, 0.309);
+    cursor: pointer;
+}
+
+#iconMais{
+    width: 48px;
+    margin: 178px -76px;
+}
+
+p{
+    font-size: 16px;
+    margin: -209px -6px;
 }

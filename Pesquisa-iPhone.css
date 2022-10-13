@@ -1,0 +1,170 @@
+body {
+    font-family: 'Sora';
+    background-color: #d6d5da86;
+    position: relative;
+    width: 1280px;
+    height: 720px;
+}
+
+hr {
+    position: absolute;
+    width: 1625px;
+    height: 90px;
+    left: -400px;
+    top: -20px;
+    background: #292C33;
+}
+
+h1 {
+    position: absolute;
+    width: 379px;
+    height: 63px;
+    left: 180px;
+    top: 140px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    text-align: center;
+    line-height: 20px;
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 00%;
+    left: 30%;
+    transform: translate(0%, 0%);
+    padding: 183px;
+    border-radius: 20px;
+    color: #000;
+}
+
+input {
+    padding: 27px;
+    width: 522px;
+    height: 18px;
+    margin: 70px -77px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #BCBCBC;
+
+}
+
+#botaoPesquisa {
+    padding: 17px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    margin: -123.9px 397.5px;
+}
+
+button:hover {
+    background-color: rgba(67, 71, 72, 0.309);
+    cursor: pointer;
+}
+
+p {
+    width: 136px;
+    height: 30px;
+    left: 311px;
+    top: 330px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 168px -65px;
+}
+
+#botaoNovoProduto {
+    box-sizing: border-box;
+
+    background-color: #eaeaeec4;
+
+    position: absolute;
+    width: 142px;
+    height: 43px;
+    left: 486px;
+    top: 344px;
+
+    border: 3px solid rgba(34, 34, 34, 0.85);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: rgba(34, 34, 34, 0.85);
+
+    cursor: pointer;
+}
+
+#nomePesquisa {
+    width: 51px;
+    height: 20px;
+    margin: 217px -65px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    color: #292C33;
+}
+
+#espacoBranco {
+    width: 476px;
+    padding: 20px;
+    height: 96px;
+    left: 311px;
+    margin: 455px 189px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+
+#iphoneDoze {
+    margin: 293px -45px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #222222;
+}
+
+#precoIphoneDoze {
+    margin: -296px -45px;
+    width: 91px;
+    height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #BCBCBC;
+}
+
+#parcelamentoIphoneDoze {
+    margin: 305px -45px;
+    width: 137px;
+    height: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #222222;
+}

@@ -70,8 +70,8 @@ input {
     margin: -123.9px 397.5px;
 }
 
-button:hover {
-    background-color: rgba(67, 71, 72, 0.309);
+#botaoPesquisa:hover {
+    background-color: #BCBCBC;
     cursor: pointer;
 }
 
@@ -104,9 +104,10 @@ p {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+}
 
-    color: rgba(34, 34, 34, 0.85);
-
+#botaoNovoProduto:hover {
+    background-color: #BCBCBC;
     cursor: pointer;
 }
 
@@ -145,7 +146,7 @@ p {
 }
 
 #precoIphoneDoze {
-    margin: -296px -45px;
+    margin: -282px -45px;
     width: 91px;
     height: 18px;
     font-style: normal;
@@ -157,7 +158,7 @@ p {
 }
 
 #parcelamentoIphoneDoze {
-    margin: 305px -45px;
+    margin: 301px -45px;
     width: 137px;
     height: 20px;
 
@@ -167,4 +168,88 @@ p {
     line-height: 20px;
 
     color: #222222;
+}
+
+#espacoBrancoDois {
+    width: 476px;
+    padding: 20px;
+    height: 96px;
+    left: 311px;
+    margin: 615px 189px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+
+#iphoneCatorze {
+    margin: 453px -45px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #222222;
+}
+
+#precoIphoneCatorze {
+    margin: -442px -45px;
+    width: 91px;
+    height: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #BCBCBC;
+}
+
+#parcelamentoIphoneCatorze {
+    margin: 468px -48px;
+    width: 137px;
+    height: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #222222;
+}
+
+#lapisEdicaoUm {
+    margin: 332px 380px;
+}
+
+#lixeiraUm {
+    margin: -346px 410px;
+    color: red;
+}
+
+#lapisEdicaoDois {
+    margin: 488px 380px;
+}
+
+#lixeiraDois {
+    margin: -502px 412px;
+    color: red;
+}
+
+#espacoBrancoTres {
+    width: 12px;
+    background-color: #E6FFE0;
+    padding: 14px;
+    margin: 628px 217px;
+    border-radius: 4px;
+}
+
+#novoProduto {
+    margin: 452px 38px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #48B393;
 }

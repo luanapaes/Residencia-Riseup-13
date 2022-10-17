@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Fazer Login</title>
     <style>
         body {
-            font-family: Arial, 'Times New Roman', sans-serif;
+            font-family: 'Sora';
             background-color: #d6d5da86;
             position: relative;
             width: 1280px;
@@ -32,7 +32,7 @@
             height: 63px;
             left: 308px;
             top: 188px;
-            font-family: 'Sora';
+
             font-style: normal;
             font-weight: 700;
             font-size: 50px;
@@ -63,7 +63,6 @@
             border-radius: 10px;
             align-items: center;
             font-size: 16px;
-            font-family: 'Sora';
             line-height: 20px;
         }
 
@@ -80,7 +79,6 @@
 
         a {
             font-size: 11px;
-            font-family: 'Sora';
             font-style: normal;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -115,10 +113,14 @@
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
 
-            if(login == "luanapaes@gmail.com" && senha == "squad"){
+            if(login == "admin" && senha == "admin"){
                 alert('Sucesso!');
                 location.href = "principal.html"; 
-            }else{
+            }
+            else if(login == "" || senha == ""){
+                alert('Insira e-mail e senha');
+            }
+            else{
                 alert('Usuário ou senha incorretos')
             }
         }

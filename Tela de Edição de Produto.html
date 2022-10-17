@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Editar Produto</title>
     <style>
         body {
             font-family: Arial, 'Times New Roman', sans-serif;
@@ -32,6 +32,7 @@
             height: 63px;
             text-align: left;
             top: 188px;
+            top: 144px;
             font-family: 'Sora';
             font-style: normal;
             font-weight: 700;
@@ -76,7 +77,7 @@
             border: none;
             outline: none;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
+            border-radius: 4px;
             align-items: center;
             font-size: 16px;
             font-family: 'Sora';
@@ -90,7 +91,7 @@
             outline: none;
             padding: 18px;
             width: 400px;
-            border-radius: 15px;
+            border-radius: 4px;
             color: white;
             font-size: 18px;
         }
@@ -106,7 +107,7 @@
             width: 400px;
             text-align: left;
             left: center;
-            top: 170px;
+            top: 120px;
             font-family: 'Sora';
             font-style: normal;
             font-weight: 700;
@@ -151,12 +152,9 @@
         <a href='file:///C:/Users/larys/Documents/VSCODEStudio/Squad/Tela%20Principal.html'>⬅ Voltar</a>
         <h1>Editar Produto</h1>
         <br><br>
+        <input id="nome" type="text" placeholder="Nome" autofocus>
         <br><br>
-        <input type="text" placeholder="Nome" autofocus>
-        <br><br>
-        <input type="text" placeholder="Valor Total">
-        <br><br>
-        <input type="text" placeholder="Valor Parcelado (12x)">
+        <input id="valor" type="text" placeholder="Valor Total">
         <br><br>
         <label for="categoria">
             <select id="categoria>
@@ -170,12 +168,25 @@
                     <option>Móveis</option>
                 </select>
             </label>
-
-        <br><br>
-        <input type=" password" placeholder="Novo (SIM/NÃO)">
-                <br><br>
-                <button>Salvar Alterações</button>
+            <br><br> 
+                <button id=" btnAlteracoes" onclick="alterarProduto(); return false;">Salvar Alterações</button>
     </div>
+    <script>
+        function alterarProduto() {
+            var nome = document.getElementById('nome').value;
+            var valor = document.getElementById('valor').value;
+            
+            if(nome == "" || valor == ""){
+                alert("Insira as informaçoes do produto");
+                location.href = "cadastro-produto.html";
+            }
+            
+            else{
+                alert("Produto alterado");
+                location.href = "principal.html";
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -48,6 +48,22 @@
   line-height: 20px;
 }
 
+.h4 {
+  position: relative;
+  margin: 20px;
+  width: 240px;
+  height: 60px;
+  top: 0px;
+  left: -20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+  line-height: 20px;
+}
+
 .hr {
   position: relative;
   width: auto;
@@ -163,8 +179,25 @@
   text-decoration: none;
 }
 
-.container .info span .fa {
-  color: #EF3B3A;
+
+.select {
+  font-family: 'Sora';
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 350px;
+}
+
+.label {
+  padding: 25px;
+  margin: 0 0 25px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Sora';
+  background: white;
+  line-height: 60px;
 }
 
 body {

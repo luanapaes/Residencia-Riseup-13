@@ -64,6 +64,22 @@
   line-height: 20px;
 }
 
+.h5 {
+  position: relative;
+  margin: 20px;
+  width: 500px;
+  height: 60px;
+  top: 0px;
+  left: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+  line-height: 20px;
+}
+
 .hr {
   position: relative;
   width: auto;
@@ -135,7 +151,7 @@
 
 .form .message a {
   color: rgb(0, 66, 198);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .form .register-form {

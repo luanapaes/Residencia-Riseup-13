@@ -1,86 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap);
+
 body {
-    font-family: 'Sora';
-    background-color: #d6d5da86;
-    position: relative;
-    width: 1280px;
-    height: 720px;
+    margin: 0px;
+    background: #d6d5da86;
+    font-family: "Sora", sans-serif;
+    overflow-y: auto;
 }
 
-hr {
-    position: absolute;
-    width: 1625px;
+.page {
+    width: 500px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #ffffff00;
+    max-width: 400px;
+    margin: 0 auto -70px;
+    padding: 45px;
+    align-items: center;
+}
+
+.hr {
+    overflow-x: hidden;
+    position: relative;
+    width: auto;
     height: 90px;
-    left: -400px;
-    top: -20px;
+    left: 0px;
+    top: -8px;
     background: #292C33;
 }
 
-h1 {
-    position: absolute;
-    width: 379px;
-    height: 63px;
-    left: 180px;
-    top: 140px;
+.h4 {
+    position: relative;
+    margin: 20px;
+    width: 240px;
+    height: 60px;
+    top: -10px;
+    left: 90px;
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 63px;
+    font-size: 26px;
     color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    text-align: center;
     line-height: 20px;
 }
 
-div {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    top: 00%;
-    left: 30%;
-    transform: translate(0%, 0%);
-    padding: 183px;
-    border-radius: 20px;
-    color: #000;
-}
-
-input {
-    padding: 27px;
-    width: 522px;
-    height: 18px;
-    margin: 70px -77px;
+.form input {
+    display: inline-flex;
+    font-family: "Sora", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    width: 470px;
     border: none;
-    outline: none;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
-    border-radius: 25px;
-    font-style: normal;
-    font-weight: 400;
+    border-radius: 15px;
+    margin: 0 0 15px;
+    padding: 18px;
+    box-sizing: border-box;
     font-size: 16px;
-    line-height: 20px;
-
-    color: #BCBCBC;
-
 }
 
-button {
-    padding: 17px;
-    border-radius: 30px;
+#btn-lupa {
+    margin: -70px 410px;
+    padding: 20px;
     border: none;
     outline: none;
-    background: #FFFFFF;
-    margin: -123.9px 397.5px;
+    border-radius: 35px;
+    display: inline;
 }
 
-button:hover {
-    background-color: rgba(67, 71, 72, 0.309);
+#btn-mais {
+    display: block;
+    outline: 0;
+    background: #ffffff;
+    color: black;
+    width: 45px;
+    border: 0;
+    border-radius: 45px;
+    padding: 8px;
+    font-size: 17px;
+    -webkit-transition: all 0.4 ease;
+    transition: all 0.4 ease;
+
+}
+
+h3 {
+    font-size: 12px;
+    margin: -25px 51px;
+}
+
+#btn-lupa:hover,
+#btn-mais:hover {
+    background: #b3b1b1;
     cursor: pointer;
-}
-
-#iconMais{
-    width: 48px;
-    margin: 178px -76px;
-}
-
-p{
-    font-size: 16px;
-    margin: -209px -6px;
 }

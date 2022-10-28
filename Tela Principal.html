@@ -1,31 +1,36 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="tprincipal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tela-inicial.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Principal</title>
-
+    <title>Tela Inicial</title>
 </head>
+
 <body>
-    <div>
-        <hr id="barra" size="5" width="100%" position="center" noshade>
-        <h1>Lista de Produtos</h1>
-        <br><br>      
+
+    <hr class="hr">
+    </hr>
+    <div class="login-page">
+        <div class="form">
+            <h1 class="h4">Lista de Produtos</h1>
+            <form class="login-form">
+                <input type="text" placeholder="Pesquisar Produto"/>
+                <button id="btn-lupa">
+                    &#128269;</button>
+            </form>
+            <div>
+                <button id="btn-mais"> &#10133;</button>
+                <h3>Cadastrar Produto</h3>
+            </div>
+        </div>
     </div>
-    <div class="pesquisa">
-        <input type="text" placeholder="Pesquisar Produto">
-        <button>&#128269</button>
-    </div>
-    <div>
-        <button id="iconMais">&#10010</button>
-        <p>Cadastrar Produto</p>
-    </div>
+
 </body>
-</body>
+
 
 </html>

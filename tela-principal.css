@@ -5,6 +5,7 @@ body {
     background: #d6d5da86;
     font-family: "Sora", sans-serif;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .page {
@@ -24,7 +25,6 @@ body {
 }
 
 .hr {
-    overflow-x: hidden;
     position: relative;
     width: auto;
     height: 90px;
@@ -62,20 +62,21 @@ body {
 }
 
 #btn-lupa {
-    margin: -70px 410px;
+    background: #fffdfd;
+    margin: -70px 415px;
     padding: 20px;
     border: none;
     outline: none;
-    border-radius: 35px;
+    border-radius: 9px;
     display: inline;
 }
 
 #btn-mais {
     display: block;
     outline: 0;
-    background: #ffffff;
+    background: #e8e7eb86;
     color: black;
-    width: 45px;
+    width: 55px;
     border: 0;
     border-radius: 45px;
     padding: 8px;
@@ -85,13 +86,26 @@ body {
 
 }
 
+#btn-sair{
+    display: block;
+    margin: -245px 750px;
+    width: 50px;
+    padding: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+
+}
+
 h3 {
-    font-size: 12px;
-    margin: -25px 51px;
+    font-size: 14px;
+    margin: -31px 58px;
 }
 
 #btn-lupa:hover,
-#btn-mais:hover {
-    background: #b3b1b1;
+#btn-mais:hover,
+#btn-sair {
     cursor: pointer;
 }
+

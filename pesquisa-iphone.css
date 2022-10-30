@@ -1,255 +1,181 @@
+@import url(https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap);
+
 body {
-    font-family: 'Sora';
-    background-color: #d6d5da86;
-    position: relative;
-    width: 1280px;
-    height: 720px;
+    margin: 0px;
+    background: #d6d5da86;
+    font-family: "Sora", sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-hr {
-    position: absolute;
-    width: 1625px;
+.page {
+    width: 500px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #ffffff00;
+    max-width: 400px;
+    margin: 0 auto -70px;
+    padding: 45px;
+    align-items: center;
+}
+
+.hr {
+    position: relative;
+    width: auto;
     height: 90px;
-    left: -400px;
-    top: -20px;
+    left: 0px;
+    top: -8px;
     background: #292C33;
 }
 
-h1 {
-    position: absolute;
-    width: 379px;
-    height: 63px;
-    left: 180px;
-    top: 140px;
+.h4 {
+    position: relative;
+    margin: 20px;
+    width: 240px;
+    height: 60px;
+    top: -10px;
+    left: 90px;
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 63px;
+    font-size: 26px;
     color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    text-align: center;
     line-height: 20px;
 }
 
-div {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    top: 00%;
-    left: 30%;
-    transform: translate(0%, 0%);
-    padding: 183px;
-    border-radius: 20px;
-    color: #000;
-}
-
-input {
-    padding: 27px;
-    width: 522px;
-    height: 18px;
-    margin: 70px -77px;
+.form input {
+    display: inline-flex;
+    font-family: "Sora", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    width: 470px;
     border: none;
-    outline: none;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
     border-radius: 25px;
-    font-style: normal;
-    font-weight: 400;
+    margin: 0 0 15px;
+    padding: 18px;
+    box-sizing: border-box;
     font-size: 16px;
-    line-height: 20px;
-
-    color: #BCBCBC;
-
 }
 
-#botaoPesquisa {
-    padding: 17px;
-    border-radius: 30px;
+#btn-lupa {
+    background: #fffdfd;
+    margin: -70px 415px;
+    padding: 20px;
     border: none;
     outline: none;
-    background: #FFFFFF;
-    margin: -123.9px 397.5px;
+    border-radius: 22px;
+    display: inline;
 }
 
-#botaoPesquisa:hover {
-    background-color: #BCBCBC;
-    cursor: pointer;
+h3 {
+    font-size: 20px;
+    margin: 30px 8px;
 }
 
-p {
-    width: 136px;
-    height: 30px;
-    left: 311px;
-    top: 330px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    margin: 168px -65px;
-}
-
-#botaoNovoProduto {
+#btn-novoProduto {
+    display: block;
     box-sizing: border-box;
-
-    background-color: #eaeaeec4;
-
-    position: absolute;
+    position: relative;
+    background-color: #e2e2e586;
     width: 142px;
-    height: 43px;
-    left: 486px;
-    top: 344px;
-
-    border: 3px solid rgba(34, 34, 34, 0.85);
+    height: 40px;
+    border-color: #000000;
     border-radius: 4px;
-
-    font-weight: 700;
+    top: -62px;
+    left: 318px;
     font-size: 16px;
+    font-weight: 700;
     line-height: 20px;
+    color: rgba(34, 34, 34, 0.85);
 }
 
-#botaoNovoProduto:hover {
-    background-color: #BCBCBC;
+#btn-lupa:hover{
     cursor: pointer;
 }
 
-#nomePesquisa {
-    width: 51px;
-    height: 20px;
-    margin: 217px -65px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-
-    color: #292C33;
+#btn-novoProduto:hover{
+    cursor: pointer;
+    translate: 0.8s;
+    background-color: #8f8f8f;
 }
 
-#espacoBranco {
-    width: 476px;
-    padding: 20px;
-    height: 96px;
-    left: 311px;
-    margin: 455px 189px;
-
-    background: #FFFFFF;
+.espaco-branco-um {
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 100px;
+    width: 458px;
+    margin: -19px 4px 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
-    border-radius: 4px;
 }
 
-#iphoneDoze {
-    margin: 293px -45px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-
-    color: #222222;
-}
-
-#precoIphoneDoze {
-    margin: -282px -45px;
-    width: 91px;
-    height: 18px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-
-    color: #BCBCBC;
-}
-
-#parcelamentoIphoneDoze {
-    margin: 301px -45px;
-    width: 137px;
-    height: 20px;
-
-    font-style: normal;
-    font-weight: 700;
+#nome-produto {
+    position: relative;
     font-size: 16px;
-    line-height: 20px;
-
-    color: #222222;
+    text-align: left;
+    left: 4px;
+    top: -25px;
 }
 
-#espacoBrancoDois {
-    width: 476px;
-    padding: 20px;
-    height: 96px;
-    left: 311px;
-    margin: 615px 189px;
+#iphone-doze {
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    left: 18px;
+    top: -21px;
+}
 
-    background: #FFFFFF;
+#preco-iphone-doze {
+    color: #BCBCBC;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    left: 10px;
+    top: -42px;
+}
+
+#parcelas-iphone-doze {
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    left: 18px;
+    top: -62px;
+}
+
+.espaco-branco-dois {
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 100px;
+    width: 458px;
+    margin: 20px 4px 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
-    border-radius: 4px;
 }
 
-#iphoneCatorze {
-    margin: 453px -45px;
-    font-style: normal;
-    font-weight: 700;
+#iphone-catorze {
+    position: relative;
     font-size: 14px;
-    line-height: 18px;
-
-    color: #222222;
+    text-align: left;
+    left: 19px;
+    top: 15px;
 }
 
-#precoIphoneCatorze {
-    margin: -442px -45px;
-    width: 91px;
-    height: 8px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-
+#preco-iphone-catorze {
     color: #BCBCBC;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    left: 10px;
+    top: -7px;
 }
 
-#parcelamentoIphoneCatorze {
-    margin: 468px -48px;
-    width: 137px;
-    height: 20px;
-
-    font-style: normal;
-    font-weight: 700;
+#parcelas-iphone-catorze {
+    position: relative;
     font-size: 16px;
-    line-height: 20px;
-
-    color: #222222;
+    text-align: left;
+    left: 18px;
+    top: -28px;
 }
 
-#lapisEdicaoUm {
-    margin: 332px 380px;
-}
-
-#lixeiraUm {
-    margin: -346px 410px;
-    color: red;
-}
-
-#lapisEdicaoDois {
-    margin: 488px 380px;
-}
-
-#lixeiraDois {
-    margin: -502px 412px;
-    color: red;
-}
-
-#espacoBrancoTres {
-    width: 12px;
-    background-color: #E6FFE0;
-    padding: 14px;
-    margin: 628px 217px;
-    border-radius: 4px;
-}
-
-#novoProduto {
-    margin: 452px 38px;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-
-    color: #48B393;
-}

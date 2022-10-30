@@ -1,63 +1,46 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="fontawesome.css">
-    <script src="https://kit.fontawesome.com/f2d1fd2929.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style-iphone.css">
+    <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tela-iphone.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone - Pesquisa</title>
-
 </head>
+
 <body>
-    <div>
-        <hr id="barra" size="5" width="100%" position="center" noshade>
-        <h1>Lista de Produtos</h1>
-        <br><br>      
+
+    <hr class="hr"></hr>
+    <div class="login-page">
+        <div class="form">
+            <h1 class="h4">Lista de Produtos</h1>
+            <form class="login-form">
+                <input type="text" placeholder="iphone" />
+                <button id="btn-lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div>
+                <h3>2 Produtos</h3>
+                <button id="btn-novoProduto">Novo Produto</button>
+            </div>
+            <div class="espaco-branco-um">
+                <h2 id="nome-produto">Nome</h2>
+                <h2 id="iphone-doze">iPhone Doze</h2>
+                <h3 id="preco-iphone-doze">R$5.000,00</h3>
+                <h4 id="parcelas-iphone-doze">12x R$415,00</h4>        
+            </div>
+            <div class="espaco-branco-dois">
+                <h2 id="iphone-catorze">iPhone Catorze</h2>
+                <h3 id="preco-iphone-catorze">R$7.000,00</h3>
+                <h4 id="parcelas-iphone-catorze">12x R$583,00</h4>            
+            </div>
+        </div>
     </div>
-    <div class="pesquisa">
-        <input type="text" placeholder="iPhone">
-        <button id="botaoPesquisa">&#128269</button>
-    </div>
-    <div>
-        <p id="qdeProduto">2 Produtos</p>
-    </div>
-    <div>
-        <button id="botaoNovoProduto">Novo Produto</button>
-    </div>
-    <div>
-        <p id="nomePesquisa">Nome</p>
-    </div>
-    <div id="espacoBranco"></div>
-    <div>
-        <p id="iphoneDoze">iPhone 12</p>
-        <p id="precoIphoneDoze">R$5.000,00</p>
-        <p id="parcelamentoIphoneDoze">12x de R$415,00</p>
-    </div>
-    <div id="espacoBrancoDois"></div>
-    <div>
-        <p id="iphoneCatorze">iPhone 14</p>
-        <p id="precoIphoneCatorze">R$7.000,00</p>
-        <p id="parcelamentoIphoneCatorze">12x de R$518,00</p>
-    </div>
-    <div>
-        <i class="fa-regular fa-pen-to-square" id="lapisEdicaoUm"></i>
-        <i class="fa-regular fa-trash-can" id="lixeiraUm"></i>
-    </div>
-    <div>
-        <i class="fa-regular fa-pen-to-square" id="lapisEdicaoDois"></i>
-        <i class="fa-regular fa-trash-can" id="lixeiraDois"></i>
-    </div>
-    <div id="espacoBrancoTres"></div>
-    <div>
-        <p id="novoProduto">Novo</p>
-    </div>
-   
+
 </body>
-</body>
+
 
 </html>

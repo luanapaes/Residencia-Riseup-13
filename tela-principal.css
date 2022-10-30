@@ -54,7 +54,7 @@ body {
     background: #ffffff;
     width: 470px;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     margin: 0 0 15px;
     padding: 18px;
     box-sizing: border-box;
@@ -83,19 +83,6 @@ body {
     font-size: 17px;
     -webkit-transition: all 0.4 ease;
     transition: all 0.4 ease;
-
-}
-
-#btn-sair{
-    display: block;
-    margin: -245px 750px;
-    width: 50px;
-    padding: 10px;
-    background: none;
-    outline: none;
-    border: none;
-    border-radius: 20px;
-
 }
 
 h3 {
@@ -109,3 +96,23 @@ h3 {
     cursor: pointer;
 }
 
+#btn-sair {
+    position: absolute;
+    margin: -70px 1200px -10px;
+    border: none;
+    outline: none;
+    background: #292C33;
+}
+
+.fa-power-off {
+    color: #ffffff;
+}
+
+.fa-power-off:hover{
+    color: rgb(216, 101, 101);
+    transition: 0.8s;
+}
+#btn-mais:hover{
+    transition: 0.8s;
+    color: rgb(11, 129, 158);
+}

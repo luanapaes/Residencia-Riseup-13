@@ -93,14 +93,51 @@ h3 {
     color: rgba(34, 34, 34, 0.85);
 }
 
-#btn-lupa:hover{
+#btn-lupa,
+#btn-lixeira,
+#btn-edicao {
     cursor: pointer;
 }
 
-#btn-novoProduto:hover{
+#btn-lupa:hover {
+    color: #8f8f8f;
+    transition: 0.4s;
+}
+
+#btn-novoProduto:hover {
     cursor: pointer;
     translate: 0.8s;
     background-color: #8f8f8f;
+}
+
+#btn-lixeira-um {
+    position: absolute;
+    font-size: 18px;
+    width: 20px;
+    left: 343px;
+    top: -2px;
+    color: rgb(255, 0, 13);
+    border: none;
+    background-color: #ffffff;
+}
+
+#btn-lixeira-um:hover {
+    color: rgba(235, 64, 98, 0.781);
+}
+
+#btn-edicao-um {
+    position: absolute;
+    font-size: 18px;
+    width: 40px;
+    left: 380px;
+    top: -2px;
+    color: rgb(2, 2, 2);
+    border: none;
+    background-color: #ffffff;
+}
+
+#btn-edicao-um:hover {
+    color: rgb(52, 106, 199);
 }
 
 .espaco-branco-um {
@@ -126,6 +163,22 @@ h3 {
     text-align: left;
     left: 18px;
     top: -21px;
+}
+
+#novoProduto {
+    position: absolute;
+    background: #E6FFE0;
+    border-radius: 4px;
+    height: 23px;
+    top: 468px;
+    left: 150px;
+    width: 65px;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    color: #48B293;
 }
 
 #preco-iphone-doze {
@@ -162,6 +215,36 @@ h3 {
     top: 15px;
 }
 
+#btn-lixeira-dois {
+    position: absolute;
+    font-size: 18px;
+    width: 20px;
+    left: 343px;
+    top: -2px;
+    color: rgb(255, 0, 13);
+    border: none;
+    background-color: #ffffff;
+}
+
+#btn-lixeira-dois:hover {
+    color: rgba(235, 64, 98, 0.781);
+}
+
+#btn-edicao-dois {
+    position: absolute;
+    font-size: 18px;
+    width: 40px;
+    left: 380px;
+    top: -2px;
+    color: rgb(2, 2, 2);
+    border: none;
+    background-color: #ffffff;
+}
+
+#btn-edicao-dois:hover {
+    color: rgb(52, 106, 199);
+}
+
 #preco-iphone-catorze {
     color: #BCBCBC;
     position: relative;
@@ -178,4 +261,3 @@ h3 {
     left: 18px;
     top: -28px;
 }
-

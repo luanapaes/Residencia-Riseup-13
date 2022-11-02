@@ -81,17 +81,6 @@ body {
     font-size: 16px;
 }
 
-p {
-    position: absolute;
-    font-size: 14px;
-    left: 52px;
-    top: 503px;
-}
-
-a {
-    text-decoration: none;
-}
-
 button {
     position: absolute;
     top: 380px;
@@ -119,14 +108,14 @@ button {
     font-size: 16px;
     border: none;
     outline: none;
-    width: 350px;
+    width: 400px;
+    padding: 18px;
+    border-radius: 4px;
+    color: #767676;
 }
 
 .label {
-    width: 100px;
-    padding: 25px;
-    border: none;
-    border-radius: 6px;
+    color: #292C33;
     font-size: 16px;
     font-family: 'Sora';
     background: white;

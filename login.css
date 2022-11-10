@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap);
 
+body {
+    margin: 0px;
+    background: #d6d5da86;
+    font-family: "Sora", sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 .h1 {
     position: relative;
     margin: 20px;
@@ -9,74 +17,9 @@
     left: 110px;
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 46px;
     line-height: 50px;
     color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    line-height: 20px;
-}
-
-.h2 {
-    position: relative;
-    margin: 20px;
-    width: 300px;
-    height: 60px;
-    top: 0px;
-    left: 30px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    line-height: 20px;
-}
-
-.h3 {
-    position: relative;
-    margin: 20px;
-    width: 500px;
-    height: 60px;
-    top: 0px;
-    left: 14px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    line-height: 20px;
-}
-
-.h4 {
-    position: relative;
-    margin: 20px;
-    width: 240px;
-    height: 60px;
-    top: 0px;
-    left: -20px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 50px;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
-    line-height: 20px;
-}
-
-.h5 {
-    position: relative;
-    margin: 20px;
-    width: 500px;
-    height: 60px;
-    top: 0px;
-    left: 14px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
     line-height: 20px;
 }
 
@@ -107,15 +50,13 @@
 
 .form input {
     font-family: "Sora", sans-serif;
-    outline: 0;
+    outline: none;
     background: #ffffff;
     width: 400px;
-    border: 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    border: none;
+    border-radius: 9px;
     margin: 0 0 15px;
-    padding: 27px;
-    box-sizing: border-box;
+    padding: 22px;
     font-size: 16px;
 }
 
@@ -123,29 +64,22 @@
     top: 800px;
     font-family: "Sora", sans-serif;
     text-transform: uppercase;
-    outline: 0;
+    outline: none;
     background: #000000;
-    width: 398px;
-    height: 70px;
-    border: 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 27px;
+    width: 400px;
+    height: 64px;
+    border: none;
+    border-radius: 9px;
+    padding: 22px;
     color: #FFFFFF;
     font-size: 16px;
 
 }
 
-.form button:hover,
-.form button:active,
-.form button:focus {
-    background: #767676;
-}
-
 #btn-entrar:hover {
-    transition: 0.8s;
+    transition: 0.9s;
     cursor: pointer;
-    animation:alternate-reverse;
+    background: #767676;
 }
 
 .form .message {
@@ -154,78 +88,19 @@
     font-size: 12px;
 }
 
-
 .form .message a {
     color: rgb(0, 66, 198);
     text-decoration: underline;
 }
 
-.form .register-form {
-    display: none;
+#cadastre-se{
+    position: absolute;
+    top: 303px;
+    left: 230px;
 }
 
-.container {
-    position: relative;
-    z-index: 1;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.container:before,
-.container:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.container .info {
-    margin: 50px auto;
-    text-align: center;
-}
-
-.container .info h1 {
-    margin: 0 0 15px;
-    padding: 0;
-    font-size: 36px;
-    font-weight: 300;
-    color: #1a1a1a;
-}
-
-.container .info span {
-    color: #4d4d4d;
-    font-size: 12px;
-}
-
-.container .info span a {
-    color: #000000;
-    text-decoration: none;
-}
-
-
-.select {
-    font-family: 'Sora';
-    font-size: 16px;
-    border: none;
-    outline: none;
-    width: 350px;
-}
-
-.label {
-    padding: 25px;
-    margin: 0 0 25px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: 'Sora';
-    background: white;
-    line-height: 60px;
-}
-
-body {
-    margin: 0px;
-    background: #d6d5da86;
-    font-family: "Sora", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+#cadastro:hover,
+#esqueceu-senha:hover{
+    transition: 0.8s;
+    color: blueviolet;
 }

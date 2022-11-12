@@ -33,6 +33,13 @@ body {
     background: #292C33;
 }
 
+.image{
+    position: absolute;
+    width: 280px;
+    top: -7px;
+    left: 536px;
+}
+
 .h4 {
     position: relative;
     margin: 20px;
@@ -67,32 +74,52 @@ body {
     padding: 20px;
     border: none;
     outline: none;
-    border-radius: 9px;
+    border-radius: 19px;
     display: inline;
 }
 
 #btn-mais {
     display: block;
-    outline: 0;
+    outline: none;
     background: #e8e7eb86;
     color: black;
     width: 55px;
-    border: 0;
+    border: none;
     border-radius: 45px;
     padding: 8px;
     font-size: 17px;
-    -webkit-transition: all 0.4 ease;
-    transition: all 0.4 ease;
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 16px;
+    margin: -31px 58px;
+}
+.list{
+    position: absolute;
+    top: 300px;
+}
+
+#btn-lista{
+    display: block;
+    outline: none;
+    background: #e8e7eb86;
+    color: black;
+    width: 55px;
+    border: none;
+    border-radius: 45px;
+    padding: 8px;
+    font-size: 17px;
+}
+
+#listar-produtos{
+    font-size: 16px;
     margin: -31px 58px;
 }
 
 #btn-lupa:hover,
 #btn-mais:hover,
-#btn-sair {
+#btn-sair,
+#btn-lista {
     cursor: pointer;
 }
 
@@ -112,7 +139,13 @@ h3 {
     color: rgb(216, 101, 101);
     transition: 0.8s;
 }
+
 #btn-mais:hover{
     transition: 0.8s;
     color: rgb(11, 129, 158);
+}
+
+#btn-lista:hover{
+    transition: 0.8s;
+    color: #637399;
 }

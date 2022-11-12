@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap);
+
+body {
+    margin: 0px;
+    background: #d6d5da86;
+    font-family: "Sora", sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.page {
+    width: 500px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #ffffff00;
+    max-width: 400px;
+    margin: 0 auto -70px;
+    padding: 45px;
+    align-items: center;
+}
+
+.hr {
+    position: relative;
+    width: auto;
+    height: 90px;
+    left: 0px;
+    top: -8px;
+    background: #292C33;
+}
+
+ #btn-lupa {
+    position: absolute;
+    background: transparent;
+    margin: -72px 415px;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+.form #btn-voltar{
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    left: -400px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 25px;
+}
+
+#btn-filtro{
+    display: inline-flex;
+    position: absolute;
+    top: 60px;
+    left: 520px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 22.4px;
+}
+
+.form input {
+    display: inline-flex;
+    font-family: "Sora", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    width: 470px;
+    border: none;
+    border-radius: 25px;
+    margin: 0 0 15px;
+    padding: 18px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.div-principal{
+    position: absolute;
+    top: -210px;
+}
+
+.lista-produtos{
+    position: absolute;
+    width: 210px;
+    top: 140px;
+    left: 2px;
+}
+
+#categoria{
+    font-size: 15px;
+    color: #292C33;
+}
+
+#btn-um{
+    display: flex;
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: rgb(90, 67, 226);
+    width: 264px;
+    top: 34px;
+    left: -5px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: -31px 58px;
+}
+
+#btn-lupa,
+#btn-voltar,
+#btn-filtro,
+#btn-um{
+    cursor: pointer;
+}
+
+#btn-voltar:hover,
+#btn-lupa:hover,
+#btn-filtro:hover{
+    transition: 0.6s;
+    color: #535965;
+}
+
+#btn-um:hover{
+    color: rgb(163, 73, 252);
+    transition: 0.7s;
+}
+
+.espaco{
+    position: absolute;
+    top: 230px;
+}
+
+#btn-lixeira {
+    position: absolute;
+    font-size: 18px;
+    width: 20px;
+    left: 343px;
+    top: -1px;
+    color: rgb(255, 0, 13);
+    border: none;
+    background-color: transparent;
+}
+
+#btn-lixeira:hover {
+    cursor: pointer;
+    color: rgba(235, 64, 98, 0.781);
+}
+
+#btn-edicao {
+    position: absolute;
+    font-size: 18px;
+    width: 40px;
+    left: 380px;
+    top: -2px;
+    color: rgb(2, 2, 2);
+    border: none;
+    background-color: transparent;
+}
+
+#btn-edicao:hover {
+    cursor: pointer;
+    color: rgb(52, 106, 199);
+}
+
+.espaco-branco{
+    display:block;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 10px 0px 57px;
+    height: 100px;
+    width: 458px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+#nome-produto {
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    left: 4px;
+    top: -35px;
+}
+
+#nome-do-produto {
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    left: 18px;
+    top: -21px;
+}
+
+#novoProduto {
+    position: absolute;
+    background: #E6FFE0;
+    border-radius: 4px;
+    height: 23px;
+    top: 468px;
+    left: 150px;
+    width: 65px;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    color: #48B293;
+}
+
+#preco-produto {
+    color: #BCBCBC;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    left: -39px;
+    top: 6px;
+}
+
+#parcelas-produto {
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    left: 18px;
+    top: 24px;
+}
+
+#qtd{
+    position: absolute;
+    width: 70px;
+    margin: 0px 383px 55px;
+    font-size: 10px;
+}
+
+.div-um{
+    position: absolute;
+    top: 200px;
+}
+
+.div-dois{
+    position: absolute;
+    top: 580px;
+}
+
+.div-tres{
+    position: absolute;
+    top: 964px;
+}
+
+.div-quatro{
+    position: absolute;
+    top: 1346px;
+}
+
+.div-cinco{
+    position: absolute;
+    top: 1726px;
+}
+
+.div-seis{
+    position: absolute;
+    top: 2106px;
+}

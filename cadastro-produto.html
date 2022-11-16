@@ -1,11 +1,12 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="./icone-page.png" type="image/x-icon">
+    <link rel="stylesheet" href="./cadastro-produto.css">
     <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cadastro-produto.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +14,16 @@
 </head>
 
 <body>
-    <hr class="hr">
-    </hr>
+    <hr class="hr"></hr>
+    <img class="image" src="./imagem-page.png" alt="">
     <div class="login-page">
         <div class="form">
-            <button id="btn-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar</button>
+            <button onclick="voltar()" id="btn-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar</button>
             <h1 class="h4">Cadastrar Produto</h1>
             <form class="login-form">
-                <input type="textarea" placeholder="Nome do Produto" id="nome-produto"/>
-                <input type="text" placeholder="Valor Total" id="valor-produto"/>
+                <input id="nome-produto" type="textarea" placeholder="Nome do Produto" required/>
+                <input id="valor-produto" type="text" placeholder="Valor" required/>
+                <input id="qtde" type="number" placeholder="Quantidade" min="0" required>
                 <label class="label" for="categoria">
                     <select class="select" id="categoria>
                                 <optionvalue="">Categoria</option>
@@ -32,13 +34,14 @@
                                 <option>Cama, Mesa e Banho</option>
                                 <option>Celular e Smartphone</option>
                                 <option>Móveis</option>
-                            </select>
-                        </label>
-                    <br><br>
-                    <button id="btn-cadastrar">Cadastrar Produto</button>
-                </form>
+                    </select>
+                </label>
+                <br><br>
+                <button id="btn-cadastrar" onclick="cadastrarProduto()">Cadastrar Produto</button>
+            </form>
             </div>
         </div>
+        <script type="text/javascript" src="./principal.js"></script>
 </body>
 
 </html>

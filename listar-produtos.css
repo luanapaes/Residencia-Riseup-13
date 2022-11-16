@@ -33,6 +33,13 @@ body {
     background: #292C33;
 }
 
+.image{
+    position: absolute;
+    width: 280px;
+    top: -7px;
+    left: 536px;
+}
+
  #btn-lupa {
     position: absolute;
     background: transparent;

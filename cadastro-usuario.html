@@ -1,7 +1,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="cadastro-usuario.css">
+    <link rel="shortcut icon" href="./icone-page.png" type="image/x-icon">
+    <link rel="stylesheet" href="./cadastro-usuario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
@@ -12,24 +13,25 @@
 </head>
 
 <body>
-    <hr class="hr">
-    </hr>
+    <hr class="hr"></hr>
+<img class="image" src="./imagem-page.png" alt="">
     <div class="login-page">
         <div class="form">
             <h1 class="h2">Criar Conta</h1>
             <form class="login-form">
-                <input type="textarea" placeholder="Nome Completo" id="nome"/>
-                <input type="textarea" placeholder="CPF/CNPJ" id="cpf-cnpj"/>
-                <input type="textarea" placeholder="E-mail" id="email"/>
-                <input type="password" placeholder="Senha" id="senha"/>
-                <input type="password" placeholder="Confirme Sua Senha" id="cf-senha"/>
+                <input type="text" placeholder="Nome Completo" id="nome" required minlength="2" maxlength="30"/>
+                <input type="text" placeholder="CPF/CNPJ" id="cpf-cnpj" required minlength="11" maxlength="11"/>
+                <input type="email" placeholder="E-mail" id="email" required/>
+                <input type="password" placeholder="Senha" id="senha" required minlength="8" maxlength="8"/>
+                <input type="password" placeholder="Confirme Sua Senha" id="cf-senha" required minlength="8" maxlength="8"/>
                 <p class="message">Já possui uma conta? <a
-                        href="file:///C:/Users/larys/Downloads/Residencia-Riseup-13-main/Atualizado/Tela%20de%20login%20-%20teste.html">Entrar</a>
+                        href="./login.html">Entrar</a>
                 </p>
-                <button id="btn-cadastrar-usuario">Casdastar-se</button>
+                <button id="btn-cadastrar-usuario" onclick="cadastrarUsuario()">Casdastar-se</button>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="cadastro.js"></script>
 </body>
 
 </html>

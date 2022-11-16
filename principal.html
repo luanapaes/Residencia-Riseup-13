@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="./icone-page.png" type="image/x-icon">
+    <link rel="stylesheet" href="./tela-principal.css">
+    <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+</head>
+
+<body>
+
+    <hr class="hr">
+    </hr>
+    <button onclick="sair()" id="btn-sair"><i class="fa-solid fa-power-off fa-2x"></a></i></button>
+    <img class="image" src="./imagem-page.png" alt="">
+    <div class="login-page">
+        <div class="form">
+            <h1 class="h4">Lista de Produtos</h1>
+            <form class="login-form">
+                <input id="pesquisa-prod" type="text" placeholder="Pesquisar Produto" />
+                <button id="btn-lupa" onclick="pesquisarProduto(); return false;"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div>
+                <button onclick="cadastrarNovoProduto()" id="btn-mais"><i
+                        class="fa-solid fa-circle-plus fa-2x"></i></button>
+                <h3>Cadastrar Produto</h3>
+            </div>
+            <div class="list">
+                <button onclick="listarProdutos()" id="btn-lista"><i class="fa-solid fa-list-ul fa-2x"></i></button>
+                <h3 id="listar-produtos">Listar Produtos</h3>
+            </div>
+            <div class="tabela">
+                <h3 class="titulo">Movimentação do mês - Dezembro/2022</h3>
+                <table>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                    </tr>
+                    <tr>
+                        <td>Fone de Ouvido Bluetooth</td>
+                        <td class="qtde">47</td>
+                    </tr>
+                    <tr>
+                        <td>Jogo de Toalha - 5 Peças</td>
+                        <td class="qtde">35</td>
+                    </tr>
+                    <tr>
+                        <td>iPhone 12</td>
+                        <td class="qtde">22</td>
+                    </tr>
+                    <tr>
+                        <td>iPhone 13</td>
+                        <td class="qtde">19</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="principal.js"></script>
+</body>
+
+
+</html>

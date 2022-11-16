@@ -1,6 +1,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="./icone-page.png" type="image/x-icon">
     <link rel="stylesheet" href="./login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,22 +13,24 @@
 </head>
 
 <body>
-    <hr class="hr">
-    </hr>
+    <hr class="hr"></hr>
+    <img class="image" src="./imagem-page.png" alt="">
     <div class="login-page">
         <div class="form">
             <h1 class="h1">Login</h1>
             <form class="login-form">
-                <input id="login" type="email" placeholder="E-mail" />
-                <input id="senha" type="password" placeholder="Senha" />
+                <input id="login" type="email" placeholder="E-mail"/>
+                <input id="senha" type="password" placeholder="Senha"/>
                 <p class="message"><a id="esqueceu-senha" 
                         href="./redefinir-senha.html">Esqueceu a senha?</a></p>
                 <p class="message" id="cadastre-se">Não tem registro? <a id="cadastro" href="./cadastro-usuario.html">
                     Crie uma conta</a></p>
-                <button id="btn-entrar">Entrar</button>
+                <button id="btn-entrar" onclick="logar(); return false;">Entrar</button>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="./cadastro.js"></script>
 </body>
+
 
 </html>

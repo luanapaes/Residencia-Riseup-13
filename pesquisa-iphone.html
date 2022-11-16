@@ -1,11 +1,12 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="./icone-page.png" type="image/x-icon">
+    <link rel="stylesheet" href="./pesquisa-iphone.css">
     <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tela-iphone.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,32 +14,33 @@
 </head>
 
 <body>
-    <hr class="hr">
-    </hr>
+    <hr class="hr"></hr>
+    <img class="image" src="./imagem-page.png" alt="">
     <div class="login-page">
         <div class="form">
+            <button id="btn-voltar" onclick="voltar()"><i class="fa-solid fa-arrow-left"></i></button>
             <h1 class="h4">Lista de Produtos</h1>
             <form class="login-form">
-                <input type="text" placeholder="iphone" />
+                <input id="pesquisa" type="text" placeholder="iphone" />
                 <button id="btn-lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <div>
                 <h3>2 Produtos</h3>
-                <button id="btn-novoProduto">Novo Produto</button>
+                <button onclick="cadastrarNovoProduto()" id="btn-novoProduto">Novo Produto</button>
             </div>
             <div class="espaco-branco-um">
                 <h2 id="nome-produto">Nome</h2>
                 <h2 id="iphone-doze">iPhone 12
-                    <button id="btn-edicao-um"><i class="fa-regular fa-pen-to-square"></i></button>
-                    <button id="btn-lixeira-um"><i class="fa-regular fa-trash-can"></i></button>
+                    <button id="btn-edicao" onclick="editarProduto()"><i class="fa-regular fa-pen-to-square"></i></button>
+                    <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                 </h2>
                 <h3 id="preco-iphone-doze">R$5.000,00</h3>
                 <h4 id="parcelas-iphone-doze">12x R$415,00</h4>
             </div>
             <div class="espaco-branco-dois">
                 <h2 id="iphone-catorze">iPhone 14
-                    <button id="btn-edicao-dois"><i class="fa-regular fa-pen-to-square"></i></button>
-                    <button id="btn-lixeira-dois"><i class="fa-regular fa-trash-can"></i></button>
+                    <button id="btn-edicao" onclick="editarProduto()"><i class="fa-regular fa-pen-to-square"></i></button>
+                    <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                 </h2>
                 <div id="novoProduto">Novo</div>
                 <h3 id="preco-iphone-catorze">R$7.000,00</h3>
@@ -46,7 +48,7 @@
             </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="principal.js"></script>
 </body>
 
 

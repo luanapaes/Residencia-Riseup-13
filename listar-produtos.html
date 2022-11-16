@@ -3,7 +3,7 @@
 
 <head>
     <link rel="shortcut icon" href="./icone-page.png" type="image/x-icon">
-    <link rel="stylesheet" href="listar-ProdutosUm.css">
+    <link rel="stylesheet" href="listar-produtos.css">
     <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <hr class="hr">
-    </hr>
+    <hr class="hr"></hr>
+    <img class="image" src="./imagem-page.png" alt="">
     <div class="login-page">
         <div class="form">
             <form class="login-form">
-                <button id="btn-voltar"><i class="fa-solid fa-arrow-left"></i></button>
+                <button onclick="voltarInicio(); return false;" id="btn-voltar"><i class="fa-solid fa-arrow-left"></i></button>
                 <button id="btn-filtro"><i class="fa-solid fa-arrow-down-wide-short"></i></button>
                 <input id="barra-pesquisa" type="text" placeholder="Pesquisar Produto" id="pesquisa-prod" />
                 <button id="btn-lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -32,7 +32,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Fone de Ouvido Bluetooth
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$32,99</h3>
@@ -42,7 +42,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Smartwatch - Relódio Inteligente Bluetooth
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$129,96</h3>
@@ -61,7 +61,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Ventilador Silence - 40cm
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$39,90</h3>
@@ -71,7 +71,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Ar Condicionado Split
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$1.520,00</h3>
@@ -89,7 +89,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Kit Enxoval - 400 Fios
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$145,25</h3>
@@ -99,7 +99,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Jogo de Toalha - 5 Peças
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$67,90</h3>
@@ -117,7 +117,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">iPhone 12
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$5.000,00</h3>
@@ -127,7 +127,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">iPhone 14
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$7.000,00</h3>
@@ -145,7 +145,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Geladeira 375 Litros Frost Free
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$5.999,00</h3>
@@ -155,7 +155,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Fogão 5 Bocas
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$1.208,07</h3>
@@ -173,7 +173,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Sofá Retrátil E Inclinável 
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$976,06</h3>
@@ -183,7 +183,7 @@
                         <div class="espaco-branco">
                             <h2 id="nome-produto">Nome</h2>
                             <h2 id="nome-do-produto">Guarda Roupa 6 Portas
-                                <button id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button onclick="editarProduto()" id="btn-edicao"><i class="fa-regular fa-pen-to-square"></i></button>
                                 <button id="btn-lixeira"><i class="fa-regular fa-trash-can"></i></button>
                             </h2>
                             <h3 id="preco-produto">R$1.096,19</h3>
@@ -193,10 +193,9 @@
                     </div>
                 </div -o-----------------0->
             </div ------------------------>
-
-
         </div>
     </div>
+    <script type="text/javascript" src="listar.js"></script>
 </body>
 
 </html>

@@ -50,6 +50,13 @@ body {
     background: #292C33;
 }
 
+.image{
+    position: absolute;
+    width: 280px;
+    top: -7px;
+    left: 536px;
+}
+
 .page {
     width: 500px;
     padding: 8% 0 0;
@@ -82,7 +89,7 @@ body {
 
 #btn-cadastrar {
     position: absolute;
-    top: 400px;
+    top: 458px;
     left: 45px;
     font-family: "Sora", sans-serif;
     outline: none;

@@ -33,6 +33,30 @@ body {
     background: #292C33;
 }
 
+.image{
+    position: absolute;
+    width: 280px;
+    top: -7px;
+    left: 536px;
+}
+
+#btn-voltar{
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    left: -400px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 25px;
+}
+
+#btn-voltar:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    color: #535965;
+}
+
 .h4 {
     position: relative;
     margin: 20px;
@@ -110,22 +134,23 @@ h3 {
     background-color: #8f8f8f;
 }
 
-#btn-lixeira-um {
+#btn-lixeira {
     position: absolute;
     font-size: 18px;
     width: 20px;
     left: 343px;
-    top: -2px;
+    top: -1px;
     color: rgb(255, 0, 13);
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
-#btn-lixeira-um:hover {
+#btn-lixeira:hover {
+    cursor: pointer;
     color: rgba(235, 64, 98, 0.781);
 }
 
-#btn-edicao-um {
+#btn-edicao {
     position: absolute;
     font-size: 18px;
     width: 40px;
@@ -133,10 +158,11 @@ h3 {
     top: -2px;
     color: rgb(2, 2, 2);
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
-#btn-edicao-um:hover {
+#btn-edicao:hover {
+    cursor: pointer;
     color: rgb(52, 106, 199);
 }
 
@@ -213,36 +239,6 @@ h3 {
     text-align: left;
     left: 19px;
     top: 15px;
-}
-
-#btn-lixeira-dois {
-    position: absolute;
-    font-size: 18px;
-    width: 20px;
-    left: 343px;
-    top: -2px;
-    color: rgb(255, 0, 13);
-    border: none;
-    background-color: #ffffff;
-}
-
-#btn-lixeira-dois:hover {
-    color: rgba(235, 64, 98, 0.781);
-}
-
-#btn-edicao-dois {
-    position: absolute;
-    font-size: 18px;
-    width: 40px;
-    left: 380px;
-    top: -2px;
-    color: rgb(2, 2, 2);
-    border: none;
-    background-color: #ffffff;
-}
-
-#btn-edicao-dois:hover {
-    color: rgb(52, 106, 199);
 }
 
 #preco-iphone-catorze {

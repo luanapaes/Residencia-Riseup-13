@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="redefinir-senha.css">
+    <link rel="shortcut icon" href="./icone-page.png" type="image/x-icon">
+    <link rel="stylesheet" href="./redefinir-senha.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="file:///C:/Users/larys/Downloads/Residencia-Riseup-13-main/Atualizado/teste%20de%20p%C3%A1gina%20nova.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +14,23 @@
 </head>
 
 <body>
-    <hr class="hr">
-    </hr>
+    <hr class="hr"></hr>
+    <img class="image" src="./imagem-page.png" alt="">
     <div class="login-page">
         <div class="form">
             <h1 class="h3">Redefinir Senha</h1>
             <form class="login-form">
-                <input type="textarea" placeholder="E-mail" id="email"/>
-                <input type="password" placeholder="Senha" id="senha"/>
-                <input type="password" placeholder="Confirme Sua Senha" id="cf-senha"/>
+                <input type="textarea" placeholder="E-mail" id="email" required/>
+                <input type="password" placeholder="Senha" id="senha" required/>
+                <input type="password" placeholder="Confirme Sua Senha" id="cf-senha" required/>
                 <p class="message" id="msg-cadastrese">Não tem uma conta? <a
-                        href="file:///C:/Users/larys/Downloads/Residencia-Riseup-13-main/Atualizado/Tela%20de%20Cadastro%20-%20teste.html">Cadastre-se
+                        href="./cadastro-usuario.html">Cadastre-se
                 </p>
-                <button id="btn-redefinir-senha">Redefnir Senha</button>
+                <button id="btn-redefinir-senha" onclick="recuperarSenha(); return false;">Redefnir Senha</button>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="./cadastro.js"></script>
 </body>
-
 
 </html>

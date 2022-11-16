@@ -32,6 +32,13 @@ body {
     background: #292C33;
 }
 
+.image{
+    position: absolute;
+    width: 280px;
+    top: -7px;
+    left: 536px;
+}
+
 .page {
     width: 500px;
     padding: 8% 0 0;
@@ -54,7 +61,7 @@ body {
     background: #ffffff;
     width: 400px;
     border: none;
-    border-radius: 9px;
+    border-radius: 4px;
     margin: 0 0 15px;
     padding: 22px;
     font-size: 16px;
@@ -69,7 +76,7 @@ body {
     width: 400px;
     height: 64px;
     border: none;
-    border-radius: 9px;
+    border-radius: 4px;
     padding: 22px;
     color: #FFFFFF;
     font-size: 16px;

@@ -13,7 +13,7 @@ function cadastrarNovoProduto() {
 }
 
 function listarProdutos(){
-    window.location = "listar-produtosUm.html";
+    window.location = "listar-produtos.html";
 }
 
 function editarProduto(){

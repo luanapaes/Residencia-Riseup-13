@@ -17,7 +17,7 @@ function cadastrarUsuario(){
     }
     else{
         alert('Usuário cadastrado. Faça login');
-        window.location = "login.html";
+        window.location = "index.html";
     }
 }
 
@@ -54,6 +54,6 @@ function recuperarSenha(){
     }
     else{
         alert('Senha alterada com sucesso')
-        window.location = "login.html";
+        window.location = "index.html";
     }
 }

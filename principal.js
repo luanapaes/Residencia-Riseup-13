@@ -1,7 +1,7 @@
 
 function sair() {
     alert('Deseja sair?')
-    window.location = "login.html";
+    window.location = "index.html";
 }
 
 function voltar(){

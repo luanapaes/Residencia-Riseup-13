@@ -37,7 +37,7 @@ body {
     position: absolute;
     width: 280px;
     top: -7px;
-    left: 536px;
+    left: 556px;
 }
 
 .h4 {
@@ -148,4 +148,31 @@ h3 {
 #btn-lista:hover{
     transition: 0.8s;
     color: #637399;
+}
+
+.tabela{
+    position: absolute;
+    top: 460px;
+    left: 50px;
+}
+
+.titulo{
+    position: absolute;
+    width: 340px;
+    top: -17px;
+    left: -57px;
+}
+
+table, th, td{
+    width: 470px;
+    border: 1px solid rgb(221, 208, 208);
+    border-radius: 4px;
+    border-collapse: collapse;
+}
+
+th{
+    background-color:rgba(202, 219, 225, 0.927);
+}
+.qtde{
+    text-align: center;
 }
